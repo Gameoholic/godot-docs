@@ -83,9 +83,7 @@ Emitted when a connection attempt succeeds.
 
 - **peer_connected** **(** :ref:`int<class_int>` id **)**
 
-Emitted by the server when a client connects.
-
-Note: If you are using custom_multiplayer, the client will not fully connect when the peer_connected() method is emitted. If you want to make an rpc call as soon as the client fully connects, add **yield(get_tree(), "physics_frame")** before the rpc call.
+Emitted by the server when a client connects. Note: If you are using custom_multiplayer, the client will not fully connect when the peer_connected() method is emitted. If you want to make an rpc call as soon as the client fully connects, add **yield(get_tree(), "physics_frame")** before the rpc call.
 ----
 
 .. _class_MultiplayerPeer_signal_peer_disconnected:
