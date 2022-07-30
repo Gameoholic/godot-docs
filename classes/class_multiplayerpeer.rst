@@ -85,10 +85,7 @@ Emitted when a connection attempt succeeds.
 
 Emitted by the server when a client connects.
 
- note::
-    If you are using custom_multiplayer, the client will not fully connect when the peer_connected() method is emitted. If you want to make an rpc call as soon as       the client fully connects, add **yield(get_tree(), "physics_frame")** before the rpc call.
-    **do not use an Android SDK provided by your distribution's repositories as it will often be outdated**.
-
+\ **Note:** If you are using custom_multiplayer, the client will not fully connect when the peer_connected() method is emitted. If you want to make an rpc call as soon as the client fully connects, add **yield(get_tree(), "physics_frame")** before the rpc call.
 ----
 
 .. _class_MultiplayerPeer_signal_peer_disconnected:
